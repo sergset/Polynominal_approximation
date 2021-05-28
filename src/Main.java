@@ -70,7 +70,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        File file = new File("C:\\Users\\User\\IdeaProjects\\Polynominal approximation\\test.txt");
+        File file = new File("C:\\Users\\User\\IdeaProjects\\Polynominal approximation\\test3.txt");
         Scanner sc = new Scanner(file);
 
         BufferedReader buffer = new BufferedReader(
