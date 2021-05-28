@@ -1,17 +1,13 @@
-import java.io.*;
-import java.util.Arrays;
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
-
-
-
-public class Main {
+public class Main extends Inverse {
     public static float[][] transpose(float[][] a) {
         int tmp = a.length;
         float[][] b = new float[tmp][tmp];
         for (int i = 0; i < tmp; i++){
-            for (int j = 0; j < tmp; j++){
+            for (int j = 0; j < tmp; j++) {
                 b[j][i] = a[i][j];
             }
         }
@@ -73,12 +69,7 @@ public class Main {
         File file = new File("C:\\Users\\User\\IdeaProjects\\Polynominal approximation\\test3.txt");
         Scanner sc = new Scanner(file);
 
-        BufferedReader buffer = new BufferedReader(
-                new InputStreamReader(System.in));
-        //System.out.print("Podaj wartość x: ");
-        //int polynominalDegree = Integer.parseInt(buffer.readLine());
-
-        int n = 5;
+        int n = 6;
         int tmp = 0;
         int tmp2 = 0;
         float values[] = new float[n];
